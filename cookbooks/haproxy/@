@@ -1,0 +1,46 @@
+
+haproxy_install 'package' do
+  haproxy_user 'haproxy'
+  haproxy_group 'haproxy'
+  install_type 'source'
+  source_url 'http://www.haproxy.org/download/2.0/src/haproxy-2.0.3.tar.gz'
+  source_checksum 'aac1ff3e5079997985b6560f46bf265447d0cd841f11c4d77f15942c9fe4b770'
+  use_libcrypt '1'
+  use_pcre '1'
+  use_openssl '1'
+  use_zlib '1'
+  action :create
+end
+
+# 
+# config_global 'set_haproxy_gloabls' do
+#    action :create
+# end
+# 
+# config_defaults 'set_haproxy_defaults' do
+#   action :create
+# end
+# 
+# install 'install_haproxy' do
+#  user 'haproxy'
+#  group 'haproxy'
+#  action :install
+# end
+# 
+# frontend 'haproxy_frontend' do
+#   action :create
+# end
+# 
+# backend 'haproxy_backend' do
+#   action :create
+# end
+# 
+# service 'start_haproxy' do
+#   action :create
+#   action :enable
+#   action :start 
+# end
+# 
+# listen 'haproxy_listen'  do
+#   action :create
+# end

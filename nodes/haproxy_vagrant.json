@@ -1,0 +1,11 @@
+{
+  "haproxy": {
+    "version": "2.0.3",
+    "install_method": "source",
+    "default_site_enabled": true
+  },
+  "run_list": [
+    "recipe[haproxy]",
+    "recipe[haproxy::misc_services]"
+  ]
+}

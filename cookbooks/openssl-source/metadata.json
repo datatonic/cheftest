@@ -1,0 +1,44 @@
+{
+  "name": "openssl-source",
+  "description": "Installs/Configures OpenSSL from source",
+  "long_description": "# openssl-source\n\nInstalls/Configures OpenSSL from source\n\n# Usage\n\nInclude `recipe[openssl-source]` in your run_list and override the\ndefaults you want changed.\n\n# Attributes\n\n### `['openssl']['version']`\n\nVersion of the OpenSSL product to build.\n\n### `['openssl']['prefix']`\n\nDirectory in which to install the completed OpenSSL product.\n\n### `['openssl']['configure_flags']`\n\nAdditional flags to pass to OpenSSL's configure.\nDefaults to `%W[ shared ]`\n\n# Recipes\n\n## default\n\nCompiles OpenSSL and installs it.\n\n# License and Author\n\nAuthor:: [Jose Luis Salas][https://github.com/josacar] (josacar@gmail.com)\n\nPrevious author:: [Matt Campbell][https://github.com/xenolinguist] (matthew.campbell@asynchrony.com)\n\nCopyright:: 2014 Jose Luis Salas\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\nimplied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+  "maintainer": "Jose Luis Salas",
+  "maintainer_email": "josacar@gmail.com",
+  "license": "Apache 2.0",
+  "platforms": {
+    "ubuntu": ">= 0.0.0",
+    "debian": ">= 0.0.0",
+    "centos": ">= 0.0.0",
+    "redhat": ">= 0.0.0"
+  },
+  "dependencies": {
+    "build-essential": ">= 0.0.0"
+  },
+  "recommendations": {
+
+  },
+  "suggestions": {
+
+  },
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "replacing": {
+
+  },
+  "attributes": {
+
+  },
+  "groupings": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "1.0.4",
+  "source_url": "",
+  "issues_url": ""
+}
